@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Jan 19 13:50:37 2018
+# Process ID: 11132
+# Current directory: C:/SharedProjects/Sadias_Directory/project_exercise_blaze
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10492 C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.xpr
+# Log file: C:/SharedProjects/Sadias_Directory/project_exercise_blaze/vivado.log
+# Journal file: C:/SharedProjects/Sadias_Directory/project_exercise_blaze\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.srcs/sources_1/bd/design_1/design_1.bd}
+launch_sdk -workspace C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk -hwspec C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper.hdf
+launch_sdk -workspace C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk -hwspec C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper.hdf

@@ -1,0 +1,1363 @@
+16:27:44 INFO  : Registering command handlers for SDK TCF services
+16:27:45 INFO  : Launching XSCT server: xsct.bat -interactive C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\temp_xsdb_launch_script.tcl
+16:27:50 INFO  : XSCT server has started successfully.
+16:28:14 INFO  : Successfully done setting XSCT server connection channel  
+16:28:14 INFO  : Successfully done setting SDK workspace  
+16:28:14 INFO  : Processing command line option -hwspec C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper.hdf.
+17:07:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:07:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+17:08:00 INFO  : FPGA configured successfully with bitstream "C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper_hw_platform_0/download.bit"
+17:09:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+17:09:04 INFO  : 'fpga -state' command is executed.
+17:09:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:09:05 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+17:09:05 INFO  : 'jtag frequency' command is executed.
+17:09:05 INFO  : Context for processor 'microblaze_0' is selected.
+17:09:05 INFO  : Processor reset is completed for 'microblaze_0'.
+17:09:05 INFO  : Context for processor 'microblaze_0' is selected.
+17:09:05 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf' is downloaded to processor 'microblaze_0'.
+17:09:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf
+----------------End of Script----------------
+
+17:09:05 INFO  : Memory regions updated for context MicroBlaze #0
+17:09:05 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:09:05 INFO  : Context for processor 'microblaze_0' is selected.
+17:09:05 INFO  : 'con' command is executed.
+17:09:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+17:09:05 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_my_project.elf_on_local.tcl'
+17:12:42 INFO  : Disconnected from the channel tcfchan#1.
+17:12:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+17:12:43 INFO  : 'fpga -state' command is executed.
+17:12:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:12:43 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+17:12:43 INFO  : 'jtag frequency' command is executed.
+17:12:43 INFO  : Context for processor 'microblaze_0' is selected.
+17:12:43 INFO  : Processor reset is completed for 'microblaze_0'.
+17:12:43 INFO  : Context for processor 'microblaze_0' is selected.
+17:12:43 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf' is downloaded to processor 'microblaze_0'.
+17:12:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf
+----------------End of Script----------------
+
+17:12:43 INFO  : Memory regions updated for context MicroBlaze #0
+17:12:43 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:12:43 INFO  : Context for processor 'microblaze_0' is selected.
+17:12:43 INFO  : 'con' command is executed.
+17:12:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+17:12:43 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_my_project.elf_on_local.tcl'
+17:14:01 INFO  : Launching XSCT server: xsct.bat -interactive C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\temp_xsdb_launch_script.tcl
+13:47:21 INFO  : Registering command handlers for SDK TCF services
+13:47:22 INFO  : Launching XSCT server: xsct.bat -interactive C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\temp_xsdb_launch_script.tcl
+13:47:25 INFO  : XSCT server has started successfully.
+13:47:25 INFO  : Successfully done setting XSCT server connection channel  
+13:47:29 INFO  : Successfully done setting SDK workspace  
+13:47:29 INFO  : Processing command line option -hwspec C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper.hdf.
+13:47:29 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+13:51:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:51:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+13:51:56 INFO  : FPGA configured successfully with bitstream "C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper_hw_platform_0/download.bit"
+13:59:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:59:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+13:59:42 INFO  : FPGA configured successfully with bitstream "C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper_hw_platform_0/download.bit"
+14:08:53 INFO  : Launching XSCT server: xsct.bat -interactive C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\temp_xsdb_launch_script.tcl
+14:08:55 INFO  : XSCT server has started successfully.
+14:08:58 INFO  : Successfully done setting XSCT server connection channel  
+14:08:58 INFO  : Successfully done setting SDK workspace  
+14:09:00 INFO  : Registering command handlers for SDK TCF services
+14:09:00 INFO  : Processing command line option -hwspec C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper.hdf.
+14:09:00 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+14:16:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:20:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:22:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:22:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:22:52 INFO  : FPGA configured successfully with bitstream "C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper_hw_platform_0/download.bit"
+14:23:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:23:22 INFO  : 'fpga -state' command is executed.
+14:23:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:23:22 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:23:22 INFO  : 'jtag frequency' command is executed.
+14:23:22 INFO  : Context for processor 'microblaze_0' is selected.
+14:23:22 INFO  : Processor reset is completed for 'microblaze_0'.
+14:23:23 INFO  : Context for processor 'microblaze_0' is selected.
+14:23:23 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf' is downloaded to processor 'microblaze_0'.
+14:23:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf
+----------------End of Script----------------
+
+14:23:23 INFO  : Memory regions updated for context MicroBlaze #0
+14:23:23 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:23:23 INFO  : Context for processor 'microblaze_0' is selected.
+14:23:23 INFO  : 'con' command is executed.
+14:23:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+14:23:23 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_my_project.elf_on_local.tcl'
+14:26:41 INFO  : Disconnected from the channel tcfchan#1.
+14:26:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:26:42 INFO  : 'fpga -state' command is executed.
+14:26:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:26:43 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:26:43 INFO  : 'jtag frequency' command is executed.
+14:26:43 INFO  : Context for processor 'microblaze_0' is selected.
+14:26:43 INFO  : Processor reset is completed for 'microblaze_0'.
+14:26:43 INFO  : Context for processor 'microblaze_0' is selected.
+14:26:43 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf' is downloaded to processor 'microblaze_0'.
+14:26:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf
+----------------End of Script----------------
+
+14:26:43 INFO  : Memory regions updated for context MicroBlaze #0
+14:26:43 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:26:43 INFO  : Context for processor 'microblaze_0' is selected.
+14:26:43 INFO  : 'con' command is executed.
+14:26:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+14:26:43 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_my_project.elf_on_local.tcl'
+14:29:15 INFO  : Disconnected from the channel tcfchan#2.
+14:29:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:29:16 INFO  : 'fpga -state' command is executed.
+14:29:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:29:16 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:29:16 INFO  : 'jtag frequency' command is executed.
+14:29:16 INFO  : Context for processor 'microblaze_0' is selected.
+14:29:16 INFO  : Processor reset is completed for 'microblaze_0'.
+14:29:16 INFO  : Context for processor 'microblaze_0' is selected.
+14:29:16 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf' is downloaded to processor 'microblaze_0'.
+14:29:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf
+----------------End of Script----------------
+
+14:29:17 INFO  : Memory regions updated for context MicroBlaze #0
+14:29:17 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:29:17 INFO  : Context for processor 'microblaze_0' is selected.
+14:29:17 INFO  : 'con' command is executed.
+14:29:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+14:29:17 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_my_project.elf_on_local.tcl'
+14:30:01 INFO  : Disconnected from the channel tcfchan#3.
+14:30:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:30:02 INFO  : 'fpga -state' command is executed.
+14:30:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:30:02 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:30:02 INFO  : 'jtag frequency' command is executed.
+14:30:02 INFO  : Context for processor 'microblaze_0' is selected.
+14:30:02 INFO  : Processor reset is completed for 'microblaze_0'.
+14:30:02 INFO  : Context for processor 'microblaze_0' is selected.
+14:30:02 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf' is downloaded to processor 'microblaze_0'.
+14:30:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf
+----------------End of Script----------------
+
+14:30:02 INFO  : Memory regions updated for context MicroBlaze #0
+14:30:02 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:30:03 INFO  : Context for processor 'microblaze_0' is selected.
+14:30:03 INFO  : 'con' command is executed.
+14:30:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+14:30:03 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_my_project.elf_on_local.tcl'
+14:33:41 INFO  : Disconnected from the channel tcfchan#4.
+14:33:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:33:42 INFO  : 'fpga -state' command is executed.
+14:33:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:33:42 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:33:42 INFO  : 'jtag frequency' command is executed.
+14:33:42 INFO  : Context for processor 'microblaze_0' is selected.
+14:33:42 INFO  : Processor reset is completed for 'microblaze_0'.
+14:33:42 INFO  : Context for processor 'microblaze_0' is selected.
+14:33:43 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf' is downloaded to processor 'microblaze_0'.
+14:33:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf
+----------------End of Script----------------
+
+14:33:43 INFO  : Memory regions updated for context MicroBlaze #0
+14:33:43 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:33:43 INFO  : Context for processor 'microblaze_0' is selected.
+14:33:43 INFO  : 'con' command is executed.
+14:33:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+14:33:43 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_my_project.elf_on_local.tcl'
+14:34:56 INFO  : Disconnected from the channel tcfchan#5.
+14:35:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:35:31 INFO  : 'fpga -state' command is executed.
+14:35:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:35:31 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:35:31 INFO  : 'jtag frequency' command is executed.
+14:35:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:35:31 INFO  : Memory regions updated for context MicroBlaze #0
+14:35:31 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:35:31 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_my_project.elf_on_local.tcl'
+14:36:58 INFO  : Disconnected from the channel tcfchan#6.
+14:37:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:37:02 INFO  : 'fpga -state' command is executed.
+14:37:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:37:02 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:37:02 INFO  : 'jtag frequency' command is executed.
+14:37:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:37:02 INFO  : Memory regions updated for context MicroBlaze #0
+14:37:02 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:37:02 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_my_project.elf_on_local.tcl'
+14:42:58 INFO  : Disconnected from the channel tcfchan#7.
+14:42:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:42:59 INFO  : 'fpga -state' command is executed.
+14:42:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:42:59 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:42:59 INFO  : 'jtag frequency' command is executed.
+14:42:59 INFO  : Context for processor 'microblaze_0' is selected.
+14:42:59 INFO  : Processor reset is completed for 'microblaze_0'.
+14:42:59 INFO  : Context for processor 'microblaze_0' is selected.
+14:43:00 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf' is downloaded to processor 'microblaze_0'.
+14:43:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf
+----------------End of Script----------------
+
+14:43:00 INFO  : Memory regions updated for context MicroBlaze #0
+14:43:00 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:43:00 INFO  : Context for processor 'microblaze_0' is selected.
+14:43:00 INFO  : 'con' command is executed.
+14:43:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+14:43:00 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_my_project.elf_on_local.tcl'
+14:51:13 INFO  : Disconnected from the channel tcfchan#8.
+14:51:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:51:14 INFO  : 'fpga -state' command is executed.
+14:51:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:51:15 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:51:15 INFO  : 'jtag frequency' command is executed.
+14:51:15 INFO  : Context for processor 'microblaze_0' is selected.
+14:51:15 INFO  : Processor reset is completed for 'microblaze_0'.
+14:51:15 INFO  : Context for processor 'microblaze_0' is selected.
+14:51:15 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf' is downloaded to processor 'microblaze_0'.
+14:51:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf
+----------------End of Script----------------
+
+14:51:15 INFO  : Memory regions updated for context MicroBlaze #0
+14:51:15 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:51:15 INFO  : Context for processor 'microblaze_0' is selected.
+14:51:15 INFO  : 'con' command is executed.
+14:51:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+14:51:15 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_my_project.elf_on_local.tcl'
+14:56:17 INFO  : Disconnected from the channel tcfchan#9.
+14:56:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:56:18 INFO  : 'fpga -state' command is executed.
+14:56:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:56:19 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:56:19 INFO  : 'jtag frequency' command is executed.
+14:56:19 INFO  : Context for processor 'microblaze_0' is selected.
+14:56:19 INFO  : Processor reset is completed for 'microblaze_0'.
+14:56:19 INFO  : Context for processor 'microblaze_0' is selected.
+14:56:19 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf' is downloaded to processor 'microblaze_0'.
+14:56:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf
+----------------End of Script----------------
+
+14:56:19 INFO  : Memory regions updated for context MicroBlaze #0
+14:56:19 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:56:19 INFO  : Context for processor 'microblaze_0' is selected.
+14:56:19 INFO  : 'con' command is executed.
+14:56:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+14:56:19 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_my_project.elf_on_local.tcl'
+15:01:03 INFO  : Disconnected from the channel tcfchan#10.
+15:01:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+15:01:04 INFO  : 'fpga -state' command is executed.
+15:01:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:01:04 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+15:01:04 INFO  : 'jtag frequency' command is executed.
+15:01:04 INFO  : Context for processor 'microblaze_0' is selected.
+15:01:04 INFO  : Processor reset is completed for 'microblaze_0'.
+15:01:04 INFO  : Context for processor 'microblaze_0' is selected.
+15:01:04 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf' is downloaded to processor 'microblaze_0'.
+15:01:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf
+----------------End of Script----------------
+
+15:01:04 INFO  : Memory regions updated for context MicroBlaze #0
+15:01:04 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+15:01:05 INFO  : Context for processor 'microblaze_0' is selected.
+15:01:05 INFO  : 'con' command is executed.
+15:01:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+15:01:05 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_my_project.elf_on_local.tcl'
+15:10:23 INFO  : Disconnected from the channel tcfchan#11.
+15:10:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+15:10:24 INFO  : 'fpga -state' command is executed.
+15:10:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:10:24 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+15:10:24 INFO  : 'jtag frequency' command is executed.
+15:10:24 INFO  : Context for processor 'microblaze_0' is selected.
+15:10:24 INFO  : Processor reset is completed for 'microblaze_0'.
+15:10:24 INFO  : Context for processor 'microblaze_0' is selected.
+15:10:24 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf' is downloaded to processor 'microblaze_0'.
+15:10:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project/Debug/my_project.elf
+----------------End of Script----------------
+
+15:10:24 INFO  : Memory regions updated for context MicroBlaze #0
+15:10:24 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+15:10:24 INFO  : Context for processor 'microblaze_0' is selected.
+15:10:24 INFO  : 'con' command is executed.
+15:10:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+15:10:24 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_my_project.elf_on_local.tcl'
+15:16:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:16:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+15:16:26 INFO  : FPGA configured successfully with bitstream "C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper_hw_platform_0/download.bit"
+15:17:48 INFO  : Disconnected from the channel tcfchan#12.
+15:17:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+15:17:50 INFO  : 'fpga -state' command is executed.
+15:17:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:17:50 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+15:17:50 INFO  : 'jtag frequency' command is executed.
+15:17:50 INFO  : Context for processor 'microblaze_0' is selected.
+15:17:50 INFO  : Processor reset is completed for 'microblaze_0'.
+15:17:50 INFO  : Context for processor 'microblaze_0' is selected.
+15:17:50 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project_2/Debug/my_project_2.elf' is downloaded to processor 'microblaze_0'.
+15:17:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/my_project_2/Debug/my_project_2.elf
+----------------End of Script----------------
+
+15:17:50 INFO  : Memory regions updated for context MicroBlaze #0
+15:17:50 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+15:17:50 INFO  : Context for processor 'microblaze_0' is selected.
+15:17:50 INFO  : 'con' command is executed.
+15:17:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+15:17:50 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_my_project_2.elf_on_local.tcl'
+15:29:42 INFO  : Disconnected from the channel tcfchan#13.
+13:20:44 INFO  : Registering command handlers for SDK TCF services
+13:20:45 INFO  : Launching XSCT server: xsct.bat -interactive C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\temp_xsdb_launch_script.tcl
+13:20:47 INFO  : XSCT server has started successfully.
+13:20:49 INFO  : Successfully done setting XSCT server connection channel  
+13:20:49 INFO  : Processing command line option -hwspec C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper.hdf.
+13:20:49 INFO  : Successfully done setting SDK workspace  
+13:20:49 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+13:23:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:24:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+13:24:14 INFO  : FPGA configured successfully with bitstream "C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper_hw_platform_0/download.bit"
+13:28:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:28:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+13:28:28 INFO  : FPGA configured successfully with bitstream "C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper_hw_platform_0/download.bit"
+13:28:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+13:28:57 INFO  : 'fpga -state' command is executed.
+13:28:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:28:57 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+13:28:57 INFO  : 'jtag frequency' command is executed.
+13:28:57 INFO  : Context for processor 'microblaze_0' is selected.
+13:28:57 INFO  : Processor reset is completed for 'microblaze_0'.
+13:28:57 INFO  : Context for processor 'microblaze_0' is selected.
+13:28:57 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+13:28:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+13:28:57 INFO  : Memory regions updated for context MicroBlaze #0
+13:28:57 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:28:57 INFO  : Context for processor 'microblaze_0' is selected.
+13:28:57 INFO  : 'con' command is executed.
+13:28:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+13:28:57 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+13:29:20 INFO  : Disconnected from the channel tcfchan#1.
+13:29:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+13:29:21 INFO  : 'fpga -state' command is executed.
+13:29:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:29:21 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+13:29:21 INFO  : 'jtag frequency' command is executed.
+13:29:21 INFO  : Context for processor 'microblaze_0' is selected.
+13:29:21 INFO  : Processor reset is completed for 'microblaze_0'.
+13:29:21 INFO  : Context for processor 'microblaze_0' is selected.
+13:29:21 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+13:29:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+13:29:21 INFO  : Memory regions updated for context MicroBlaze #0
+13:29:21 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:29:21 INFO  : Context for processor 'microblaze_0' is selected.
+13:29:21 INFO  : 'con' command is executed.
+13:29:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+13:29:21 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+13:30:25 INFO  : Disconnected from the channel tcfchan#2.
+13:30:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+13:30:26 INFO  : 'fpga -state' command is executed.
+13:30:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:30:26 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+13:30:26 INFO  : 'jtag frequency' command is executed.
+13:30:26 INFO  : Context for processor 'microblaze_0' is selected.
+13:30:26 INFO  : Processor reset is completed for 'microblaze_0'.
+13:30:26 INFO  : Context for processor 'microblaze_0' is selected.
+13:30:26 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+13:30:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+13:30:27 INFO  : Memory regions updated for context MicroBlaze #0
+13:30:27 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+13:30:27 INFO  : Context for processor 'microblaze_0' is selected.
+13:30:27 INFO  : 'con' command is executed.
+13:30:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+13:30:27 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+13:58:37 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1515786720785,  Project:1515622925761
+13:58:37 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+13:59:02 INFO  : Copied contents of C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+13:59:02 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+13:59:04 INFO  : 
+13:59:05 INFO  : Updating hardware inferred compiler options for hello_world_project.
+13:59:05 INFO  : Clearing existing target manager status.
+13:59:07 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+13:59:09 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+14:00:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:00:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:00:54 INFO  : FPGA configured successfully with bitstream "C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper_hw_platform_0/download.bit"
+14:01:19 INFO  : Disconnected from the channel tcfchan#3.
+14:01:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:01:20 INFO  : 'fpga -state' command is executed.
+14:01:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:01:20 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:01:20 INFO  : 'jtag frequency' command is executed.
+14:01:20 INFO  : Context for processor 'microblaze_0' is selected.
+14:01:20 INFO  : Processor reset is completed for 'microblaze_0'.
+14:01:20 INFO  : Context for processor 'microblaze_0' is selected.
+14:01:20 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+14:01:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+14:01:21 INFO  : Memory regions updated for context MicroBlaze #0
+14:01:21 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:01:21 INFO  : Context for processor 'microblaze_0' is selected.
+14:01:21 INFO  : 'con' command is executed.
+14:01:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+14:01:21 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+14:01:47 INFO  : Disconnected from the channel tcfchan#4.
+14:01:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:01:48 INFO  : 'fpga -state' command is executed.
+14:01:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:01:48 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:01:48 INFO  : 'jtag frequency' command is executed.
+14:01:48 INFO  : Context for processor 'microblaze_0' is selected.
+14:01:48 INFO  : Processor reset is completed for 'microblaze_0'.
+14:01:48 INFO  : Context for processor 'microblaze_0' is selected.
+14:01:48 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+14:01:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+14:01:48 INFO  : Memory regions updated for context MicroBlaze #0
+14:01:48 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:01:48 INFO  : Context for processor 'microblaze_0' is selected.
+14:01:48 INFO  : 'con' command is executed.
+14:01:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+14:01:48 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+14:02:08 INFO  : Disconnected from the channel tcfchan#5.
+14:02:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:02:09 INFO  : 'fpga -state' command is executed.
+14:02:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:02:09 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:02:09 INFO  : 'jtag frequency' command is executed.
+14:02:09 INFO  : Context for processor 'microblaze_0' is selected.
+14:02:09 INFO  : Processor reset is completed for 'microblaze_0'.
+14:02:09 INFO  : Context for processor 'microblaze_0' is selected.
+14:02:09 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+14:02:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+14:02:09 INFO  : Memory regions updated for context MicroBlaze #0
+14:02:09 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:02:09 INFO  : Context for processor 'microblaze_0' is selected.
+14:02:09 INFO  : 'con' command is executed.
+14:02:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+14:02:09 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+14:40:57 INFO  : Disconnected from the channel tcfchan#6.
+14:40:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:40:58 INFO  : 'fpga -state' command is executed.
+14:40:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:40:58 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:40:58 INFO  : 'jtag frequency' command is executed.
+14:40:58 INFO  : Context for processor 'microblaze_0' is selected.
+14:40:58 INFO  : Processor reset is completed for 'microblaze_0'.
+14:40:58 INFO  : Context for processor 'microblaze_0' is selected.
+14:40:58 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+14:40:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+14:40:58 INFO  : Memory regions updated for context MicroBlaze #0
+14:40:58 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:40:58 INFO  : Context for processor 'microblaze_0' is selected.
+14:40:58 INFO  : 'con' command is executed.
+14:40:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+14:40:58 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+14:45:08 INFO  : Disconnected from the channel tcfchan#7.
+14:45:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:45:09 INFO  : 'fpga -state' command is executed.
+14:45:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:45:10 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:45:10 INFO  : 'jtag frequency' command is executed.
+14:45:10 INFO  : Context for processor 'microblaze_0' is selected.
+14:45:10 INFO  : Processor reset is completed for 'microblaze_0'.
+14:45:10 INFO  : Context for processor 'microblaze_0' is selected.
+14:45:10 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+14:45:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+14:45:10 INFO  : Memory regions updated for context MicroBlaze #0
+14:45:10 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:45:10 INFO  : Context for processor 'microblaze_0' is selected.
+14:45:10 INFO  : 'con' command is executed.
+14:45:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+14:45:10 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+14:46:48 INFO  : Disconnected from the channel tcfchan#8.
+14:46:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:46:49 INFO  : 'fpga -state' command is executed.
+14:46:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:46:49 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:46:49 INFO  : 'jtag frequency' command is executed.
+14:46:49 INFO  : Context for processor 'microblaze_0' is selected.
+14:46:49 INFO  : Processor reset is completed for 'microblaze_0'.
+14:46:49 INFO  : Context for processor 'microblaze_0' is selected.
+14:46:49 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+14:46:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+14:46:49 INFO  : Memory regions updated for context MicroBlaze #0
+14:46:49 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:46:49 INFO  : Context for processor 'microblaze_0' is selected.
+14:46:49 INFO  : 'con' command is executed.
+14:46:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+14:46:49 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+14:52:17 INFO  : Disconnected from the channel tcfchan#9.
+14:52:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:52:18 INFO  : 'fpga -state' command is executed.
+14:52:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:52:18 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:52:18 INFO  : 'jtag frequency' command is executed.
+14:52:19 INFO  : Context for processor 'microblaze_0' is selected.
+14:52:19 INFO  : Processor reset is completed for 'microblaze_0'.
+14:52:19 INFO  : Context for processor 'microblaze_0' is selected.
+14:52:19 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+14:52:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+14:52:19 INFO  : Memory regions updated for context MicroBlaze #0
+14:52:19 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:52:19 INFO  : Context for processor 'microblaze_0' is selected.
+14:52:19 INFO  : 'con' command is executed.
+14:52:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+14:52:19 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+14:52:54 DEBUG : XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project_bsp/system.mss ], Thread: main
+14:52:54 DEBUG : XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project_bsp/system.mss ], Result: [null, ]. Thread: main
+14:52:54 DEBUG : XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project_bsp/system.mss], Thread: main
+14:52:54 DEBUG : XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.3",
+}]. Thread: main
+14:52:54 DEBUG : XSCT Command: [::hsi::utils::closesw C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project_bsp/system.mss], Thread: main
+14:52:54 DEBUG : XSCT command with result: [::hsi::utils::closesw C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project_bsp/system.mss], Result: [null, ]. Thread: main
+14:53:00 DEBUG : Disconnect called on launch 'System Debugger using Debug_hello_world_project.elf on Local'
+14:53:00 DEBUG : XSCT Command: [disconnect tcfchan#10], Thread: Thread-609
+14:53:00 DEBUG : Disconnect callback received on 'System Debugger using Debug_hello_world_project.elf on Local'
+14:53:00 DEBUG : Disconnect called on launch 'System Debugger using Debug_hello_world_project.elf on Local'
+14:53:00 DEBUG : Xsdb disconnect is not issued on System Debugger using Debug_hello_world_project.elf on Local
+14:53:00 DEBUG : XSCT command with result: [disconnect tcfchan#10], Result: [null, ]. Thread: Thread-609
+14:53:00 DEBUG : (XSDB Server)Info: tcfchan#10 closed
+
+14:53:00 INFO  : Disconnected from the channel tcfchan#10.
+14:53:01 DEBUG : XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-27
+14:53:01 DEBUG : XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#11]. Thread: Worker-27
+14:53:01 DEBUG : XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27
+14:53:01 DEBUG : XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203A25A2AA]. Thread: Worker-27
+14:53:01 DEBUG : XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27
+14:53:01 DEBUG : XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203A25A2AA]. Thread: Worker-27
+14:53:01 DEBUG : XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==1}], Thread: Worker-27
+14:53:01 DEBUG : XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==1}], Result: [null,      2  xc7vx485t (idcode 33687093 irlen 6 fpga)]. Thread: Worker-27
+14:53:01 DEBUG : Following devices found for target "Local": [xc7vx485t]
+14:53:01 DEBUG : XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0], Thread: Worker-27
+14:53:01 DEBUG : XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0], Result: [null, ]. Thread: Worker-27
+14:53:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:53:01 DEBUG : XSCT Command: [fpga -state], Thread: Worker-27
+14:53:01 DEBUG : XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-27
+14:53:01 INFO  : 'fpga -state' command is executed.
+14:53:01 DEBUG : XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-27
+14:53:01 DEBUG : XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#11]. Thread: Worker-27
+14:53:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:53:01 DEBUG : XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27
+14:53:01 DEBUG : XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203A25A2AA]. Thread: Worker-27
+14:53:01 DEBUG : XSCT Command: [version -server], Thread: Worker-27
+14:53:01 DEBUG : XSCT command with result: [version -server], Result: [null, 2017.2]. Thread: Worker-27
+14:53:01 DEBUG : XSCT Command: [version], Thread: Worker-27
+14:53:01 DEBUG : XSCT command with result: [version], Result: [null, 2017.2]. Thread: Worker-27
+14:53:01 DEBUG : XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27
+14:53:01 DEBUG : XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203A25A2AA]. Thread: Worker-27
+14:53:01 DEBUG : XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==1}], Thread: Worker-27
+14:53:01 DEBUG : XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==1}], Result: [null,      2  xc7vx485t (idcode 33687093 irlen 6 fpga)]. Thread: Worker-27
+14:53:01 DEBUG : Following devices found for target "Local": [xc7vx485t]
+14:53:01 DEBUG : XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27
+14:53:01 DEBUG : XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203A25A2AA]. Thread: Worker-27
+14:53:01 DEBUG : XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==1}], Thread: Worker-27
+14:53:01 DEBUG : XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==1}], Result: [null,      2  xc7vx485t (idcode 33687093 irlen 6 fpga)]. Thread: Worker-27
+14:53:01 DEBUG : Following devices found for target "Local": [xc7vx485t]
+14:53:01 DEBUG : XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27
+14:53:01 DEBUG : XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203A25A2AA]. Thread: Worker-27
+14:53:01 DEBUG : XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==1}], Thread: Worker-27
+14:53:02 DEBUG : XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==1}], Result: [null,      2  xc7vx485t (idcode 33687093 irlen 6 fpga)]. Thread: Worker-27
+14:53:02 DEBUG : Following devices found for target "Local": [xc7vx485t]
+14:53:02 DEBUG : XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27
+14:53:02 DEBUG : XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT1 210203A25A2AA]. Thread: Worker-27
+14:53:02 DEBUG : XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==1}], Thread: Worker-27
+14:53:02 DEBUG : XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==1}], Result: [null,      2  xc7vx485t (idcode 33687093 irlen 6 fpga)]. Thread: Worker-27
+14:53:02 DEBUG : Following devices found for target "Local": [xc7vx485t]
+14:53:02 DEBUG : XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level == 0}], Thread: Worker-27
+14:53:02 DEBUG : XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level == 0}], Result: [null, ]. Thread: Worker-27
+14:53:02 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:53:02 DEBUG : XSCT Command: [jtag frequency], Thread: Worker-27
+14:53:02 DEBUG : XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-27
+14:53:02 INFO  : 'jtag frequency' command is executed.
+14:53:02 DEBUG : XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0], Thread: Worker-27
+14:53:02 DEBUG : XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0], Result: [null, ]. Thread: Worker-27
+14:53:02 INFO  : Context for processor 'microblaze_0' is selected.
+14:53:02 DEBUG : XSCT Command: [rst -processor], Thread: Worker-27
+14:53:02 DEBUG : (XSDB Server)xsdb% Info: MicroBlaze #0 (target 3) Stopped at 0x0 (External debug request)
+
+14:53:02 DEBUG : XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-27
+14:53:02 INFO  : Processor reset is completed for 'microblaze_0'.
+14:53:02 DEBUG : XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0], Thread: Worker-27
+14:53:02 DEBUG : XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0], Result: [null, ]. Thread: Worker-27
+14:53:02 INFO  : Context for processor 'microblaze_0' is selected.
+14:53:02 DEBUG : XSCT Command: [dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf], Thread: Worker-27
+14:53:02 DEBUG : (XSDB Server)Downloading Program -- C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+	section, .vectors.reset: 0x00000000 - 0x00000007
+	section, .vectors.sw_exception: 0x00000008 - 0x0000000f
+	section, .vectors.interrupt: 0x00000010 - 0x00000017
+	section, .vectors.hw_exception: 0x00000020 - 0x00000027
+	section, .text: 0x00000050 - 0x0000156f
+	section, .init: 0x00001570 - 0x000015ab
+	section, .fini: 0x000015ac - 0x000015cb
+	section, .ctors: 0x000015cc - 0x000015d3
+	section, .dtors: 0x000015d4 - 0x000015db
+	section, .rodata: 0x000015dc - 0x000019eb
+	section, .sdata2: 0x000019ec - 0x000019ef
+	section, .data: 0x000019f0 - 0x00001b1f
+	section, .sdata: 0x00001b20 - 0x00001b1f
+	section, .sbss: 0x00001b20 - 0x00001b1f
+	section, .bss: 0x00001b20 - 0x00001b3f
+	section, .heap: 0x00001b40 - 0x0000233f
+	section, .stack: 0x00002340 - 0x0000273f
+
+14:53:02 DEBUG : (XSDB Server)  0%    0MB   0.0MB/s  ??:?? ETA
+14:53:02 DEBUG : (XSDB Server)100%    0MB   0.1MB/s  00:00    
+14:53:02 DEBUG : (XSDB Server)
+Setting PC to Program Start Address 0x00000000
+14:53:02 DEBUG : (XSDB Server)
+Successfully downloaded C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+14:53:02 DEBUG : (XSDB Server)
+
+14:53:02 DEBUG : XSCT command with result: [dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf], Result: [null, ]. Thread: Worker-27
+14:53:02 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+14:53:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+14:53:02 DEBUG : Services are already registered
+14:53:02 DEBUG : Services are already registered
+14:53:02 DEBUG : Added registers [{Description=axi_intc, Readable=false, ID=microblaze_0_axi_intc, Name=microblaze_0_axi_intc}, {ParentID=microblaze_0_axi_intc, Description=Interrupt Vector Register, Size=1, Readable=true, ID=microblaze_0_axi_intc_IVR, Writeable=false, MemoryAddress=1092616216, Name=IVR}, {ParentID=microblaze_0_axi_intc_IVR, Description=Interrupt Vector Number.
+  R - Reads ordinal of highest priority, enabled, active interrupt.
+, Bits=[Ljava.lang.Integer;@733a94ad, Readable=true, ID=IVN, Writeable=false, Name=IVN}, {ParentID=microblaze_0_axi_intc, Description=Interrupt Enable Register, Size=1, Readable=true, ID=microblaze_0_axi_intc_IER, Writeable=true, MemoryAddress=1092616200, Name=IER}, {ParentID=microblaze_0_axi_intc_IER, Description=Interrupt Enable Register.
+For each bit:
+  R - Reads interrupt enable value.
+  W - Writes interrupt enable value.
+, Bits=[Ljava.lang.Integer;@122b31f1, Readable=true, ID=INT, Writeable=true, Name=INT}, {ParentID=microblaze_0_axi_intc, Description=Interrupt Vector Address Register 0, Size=4, Readable=true, ID=microblaze_0_axi_intc_IVAR[0], Writeable=true, MemoryAddress=1092616448, Name=IVAR[0]}, {ParentID=microblaze_0_axi_intc_IVAR[0], Description=Interrupt vector address of active interrupt 0 with highest priority.
+, Bits=[Ljava.lang.Integer;@28d1a7e6, Readable=true, ID=IVA, Writeable=true, Name=IVA}, {ParentID=microblaze_0_axi_intc, Description=Interrupt Status Register, Size=1, Readable=true, ID=microblaze_0_axi_intc_ISR, Writeable=true, MemoryAddress=1092616192, Name=ISR}, {ParentID=microblaze_0_axi_intc_ISR, Description=Interrupt Status Register.
+For each bit up to number of periperhal interrupts:
+  R - Reads active interrupt signal.
+  W - No effect after MER HIE bit has been set, otherwise writes active interrupt signal.
+For remaining bits defined by number of software interrupts:
+  R - Reads software interrupt value.
+  W - Writes software interrupt value.
+, Bits=[Ljava.lang.Integer;@2c44c3f4, Readable=true, ID=INT, Writeable=true, Name=INT}, {ParentID=microblaze_0_axi_intc, Description=Interrupt Pending Register, Size=1, Readable=true, ID=microblaze_0_axi_intc_IPR, Writeable=false, MemoryAddress=1092616196, Name=IPR}, {ParentID=microblaze_0_axi_intc_IPR, Description=Interrupt Pending Register.
+For each bit:
+  R - Reads logical AND of bits in ISR and IER.
+  W - No effect.
+, Bits=[Ljava.lang.Integer;@bfca52d, Readable=true, ID=INT, Writeable=false, Name=INT}, {ParentID=microblaze_0_axi_intc, Description=Interrupt Acknowledge Register, Size=1, Readable=false, ID=microblaze_0_axi_intc_IAR, Writeable=true, MemoryAddress=1092616204, Name=IAR}, {ParentID=microblaze_0_axi_intc_IAR, Description=Interrupt Acknowledge Register.
+For each bit:
+  W - Acknowledge interrupt.
+, Bits=[Ljava.lang.Integer;@4093b91a, Readable=false, ID=INT, Writeable=true, Name=INT}, {ParentID=microblaze_0_axi_intc, Description=Master Enable Register, Size=1, Readable=true, ID=microblaze_0_axi_intc_MER, Writeable=true, MemoryAddress=1092616220, Name=MER}, {ParentID=microblaze_0_axi_intc_MER, Description=Master IRQ Enable.
+  0 - All interrupts disabled.
+  1 - All interrupts can be enabled.
+, Bits=[Ljava.lang.Integer;@6558d879, Readable=true, ID=ME, Writeable=true, Name=ME}, {ParentID=microblaze_0_axi_intc_MER, Description=Hardware Interrupt Enable.
+  0 - HW interrupts disabled.
+  1 - HW interrupts enabled.
+, Bits=[Ljava.lang.Integer;@6f09fc45, Readable=true, ID=HIE, Writeable=true, Name=HIE}, {ParentID=microblaze_0_axi_intc, Description=Interrupt Vector Address Register 1, Size=4, Readable=true, ID=microblaze_0_axi_intc_IVAR[1], Writeable=true, MemoryAddress=1092616452, Name=IVAR[1]}, {ParentID=microblaze_0_axi_intc_IVAR[1], Description=Interrupt vector address of active interrupt 1 with highest priority.
+, Bits=[Ljava.lang.Integer;@132f944, Readable=true, ID=IVA, Writeable=true, Name=IVA}, {ParentID=microblaze_0_axi_intc, Description=Set Interrupt Enables, Size=1, Readable=true, ID=microblaze_0_axi_intc_SIE, Writeable=true, MemoryAddress=1092616208, Name=SIE}, {ParentID=microblaze_0_axi_intc_SIE, Description=Set Interrupt Enables
+For each bit:
+  R - Reads active interrupt.
+  W - Writing 1 enables the interrupt, writing 0 has no effect.
+, Bits=[Ljava.lang.Integer;@5c34cb11, Readable=true, ID=INT, Writeable=true, Name=INT}, {ParentID=microblaze_0_axi_intc, Description=Clear Interrupt Enables, Size=1, Readable=true, ID=microblaze_0_axi_intc_CIE, Writeable=true, MemoryAddress=1092616212, Name=CIE}, {ParentID=microblaze_0_axi_intc_CIE, Description=Clear Interrupt Enables
+For each bit:
+  R - Reads active interrupt.
+  W - Writing 1 disables the interrupt, writing 0 has no effect.
+, Bits=[Ljava.lang.Integer;@7f8c4bfe, Readable=true, ID=INT, Writeable=true, Name=INT}, {ParentID=microblaze_0_axi_intc, Description=Interrupt Mode Register, Size=1, Readable=true, ID=microblaze_0_axi_intc_IMR, Writeable=true, MemoryAddress=1092616224, Name=IMR}, {ParentID=microblaze_0_axi_intc_IMR, Description=Interrupt Mode Register.
+For each bit:
+  R - Reads interrupt mode.
+  W - Sets interrupt mode, where 0 is normal mode and 1 is fast mode.
+, Bits=[Ljava.lang.Integer;@5fc77b9e, Readable=true, ID=INT, Writeable=true, Name=INT}]
+14:53:02 DEBUG : Added registers [{Description=axi_gpio, Readable=false, ID=axi_gpio_0, Name=axi_gpio_0}, {ParentID=axi_gpio_0, Description=Channel-1 AXI GPIO Data register, Size=1, Readable=true, ID=axi_gpio_0_GPIO_DATA, Writeable=true, MemoryAddress=1073741824, Name=GPIO_DATA}, {ParentID=axi_gpio_0_GPIO_DATA, Description=AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+, Bits=[Ljava.lang.Integer;@49a941fb, Readable=true, ID=Channel-1 GPIO DATA, Writeable=true, Name=Channel-1 GPIO DATA}, {ParentID=axi_gpio_0, Description=Channel-2 AXI GPIO 3-State Control register, Size=4, Readable=true, ID=axi_gpio_0_GPIO2_TRI, Writeable=true, MemoryAddress=1073741836, Name=GPIO2_TRI}, {ParentID=axi_gpio_0_GPIO2_TRI, Description=AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+, Bits=[Ljava.lang.Integer;@333f679c, Readable=true, ID=Channel-2 GPIO TRI, Writeable=true, Name=Channel-2 GPIO TRI}, {ParentID=axi_gpio_0, Description=IP Interrupt Status register, Size=4, Readable=true, ID=axi_gpio_0_IP_ISR, Writeable=true, MemoryAddress=1073742112, Name=IP_ISR}, {ParentID=axi_gpio_0_IP_ISR, Description=Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+, Bits=[Ljava.lang.Integer;@2ef119be, Readable=true, ID=Channel-1 Interrupt Status, Writeable=true, Name=Channel-1 Interrupt Status}, {ParentID=axi_gpio_0_IP_ISR, Description=Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+, Bits=[Ljava.lang.Integer;@4a0e9c75, Readable=true, ID=Channel-2 Interrupt Status, Writeable=true, Name=Channel-2 Interrupt Status}, {ParentID=axi_gpio_0, Description=Channel-1 AXI GPIO 3-State Control register, Size=1, Readable=true, ID=axi_gpio_0_GPIO_TRI, Writeable=true, MemoryAddress=1073741828, Name=GPIO_TRI}, {ParentID=axi_gpio_0_GPIO_TRI, Description=AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+, Bits=[Ljava.lang.Integer;@49abaa56, Readable=true, ID=Channel-1 GPIO TRI, Writeable=true, Name=Channel-1 GPIO TRI}, {ParentID=axi_gpio_0, Description=Channel-2 AXI GPIO Data register, Size=4, Readable=true, ID=axi_gpio_0_GPIO2_DATA, Writeable=true, MemoryAddress=1073741832, Name=GPIO2_DATA}, {ParentID=axi_gpio_0_GPIO2_DATA, Description=AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+, Bits=[Ljava.lang.Integer;@1e02778, Readable=true, ID=Channel-2 GPIO DATA, Writeable=true, Name=Channel-2 GPIO DATA}, {ParentID=axi_gpio_0, Description=IP Interrupt Enable register, Size=4, Readable=true, ID=axi_gpio_0_IP_IER, Writeable=true, MemoryAddress=1073742120, Name=IP_IER}, {ParentID=axi_gpio_0_IP_IER, Description=Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+, Bits=[Ljava.lang.Integer;@27faf213, Readable=true, ID=Channel-1 Interrupt Enable, Writeable=true, Name=Channel-1 Interrupt Enable}, {ParentID=axi_gpio_0_IP_IER, Description=Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+, Bits=[Ljava.lang.Integer;@19292fad, Readable=true, ID=Channel-2 Interrupt Enable, Writeable=true, Name=Channel-2 Interrupt Enable}, {ParentID=axi_gpio_0, Description=Global Interrupt Enable register, Size=4, Readable=true, ID=axi_gpio_0_GIER, Writeable=true, MemoryAddress=1073742108, Name=GIER}, {ParentID=axi_gpio_0_GIER, Description=Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+, Bits=[Ljava.lang.Integer;@dc4cfc4, Readable=true, ID=Global Interrupt Enable, Writeable=true, Name=Global Interrupt Enable}]
+14:53:02 DEBUG : Added registers [{Description=axi_uartlite, Readable=false, ID=axi_uartlite_0, Name=axi_uartlite_0}, {ParentID=axi_uartlite_0, Description=Receive data FIFO, Size=4, Readable=true, ID=axi_uartlite_0_RX_FIFO, Writeable=false, MemoryAddress=1080033280, Name=RX_FIFO}, {ParentID=axi_uartlite_0_RX_FIFO, Description=UART Receive Data
+, Bits=[Ljava.lang.Integer;@d1ff2e3, Readable=true, ID=RX_DATA, Writeable=false, Name=RX_DATA}, {ParentID=axi_uartlite_0, Description=UART Lite control register, Size=4, Readable=false, ID=axi_uartlite_0_CTRL_REG, Writeable=true, MemoryAddress=1080033292, Name=CTRL_REG}, {ParentID=axi_uartlite_0_CTRL_REG, Description=Reset/clear the transmit FIFO
+Writing a 1 to this bit position clears the transmit FIFO
+  0 - Do nothing
+  1 - Clear the transmit FIFO
+, Bits=[Ljava.lang.Integer;@7d85f339, Readable=false, ID=RST_TXFIFO, Writeable=true, Name=RST_TXFIFO}, {ParentID=axi_uartlite_0_CTRL_REG, Description=Reset/clear the receive FIFO
+Writing a 1 to this bit position clears the receive FIFO
+  0 - Do nothing
+  1 - Clear the receive FIFO
+, Bits=[Ljava.lang.Integer;@2d81ff63, Readable=false, ID=RST_RXFIFO, Writeable=true, Name=RST_RXFIFO}, {ParentID=axi_uartlite_0_CTRL_REG, Description=Enable interrupt for the AXI UART Lite
+  0 - Disable interrupt signal
+  1 - Enable interrupt signal
+, Bits=[Ljava.lang.Integer;@610bff8, Readable=false, ID=Enable_Intr, Writeable=true, Name=Enable_Intr}, {ParentID=axi_uartlite_0, Description=Transmit data FIFO, Size=4, Readable=false, ID=axi_uartlite_0_TX_FIFO, Writeable=true, MemoryAddress=1080033284, Name=TX_FIFO}, {ParentID=axi_uartlite_0_TX_FIFO, Description=UART Transmit Data
+, Bits=[Ljava.lang.Integer;@746acd33, Readable=false, ID=TX_DATA, Writeable=true, Name=TX_DATA}, {ParentID=axi_uartlite_0, Description=UART Lite status register, Size=4, Readable=true, ID=axi_uartlite_0_STAT_REG, Writeable=false, MemoryAddress=1080033288, Name=STAT_REG}, {ParentID=axi_uartlite_0_STAT_REG, Description=Indicates if the receive FIFO has data.
+  0 - Receive FIFO is empty
+  1 - Receive FIFO has data
+, Bits=[Ljava.lang.Integer;@26a4e4bc, Readable=true, ID=RX_FIFO_Valid_Data, Writeable=false, Name=RX_FIFO_Valid_Data}, {ParentID=axi_uartlite_0_STAT_REG, Description=Indicates if the receive FIFO is full.
+  0 - Receive FIFO is not full
+  1 - Receive FIFO is full
+, Bits=[Ljava.lang.Integer;@47c6dec, Readable=true, ID=RX_FIFO_Full, Writeable=false, Name=RX_FIFO_Full}, {ParentID=axi_uartlite_0_STAT_REG, Description=Indicates if the transmit FIFO is empty.
+  0 - Transmit FIFO is not empty
+  1 - Transmit FIFO is empty
+, Bits=[Ljava.lang.Integer;@790fde4, Readable=true, ID=TX_FIFO_Empty, Writeable=false, Name=TX_FIFO_Empty}, {ParentID=axi_uartlite_0_STAT_REG, Description=Indicates if the transmit FIFO is full.
+  0 - Transmit FIFO is not full
+  1 - Transmit FIFO is full
+, Bits=[Ljava.lang.Integer;@25b1ab70, Readable=true, ID=TX_FIFO_Full, Writeable=false, Name=TX_FIFO_Full}, {ParentID=axi_uartlite_0_STAT_REG, Description=Indicates that interrupts is enabled.
+  0 - Interrupt is disabled
+  1 - Interrupt is enabled
+, Bits=[Ljava.lang.Integer;@24b12a7e, Readable=true, ID=Intr_Enabled, Writeable=false, Name=Intr_Enabled}, {ParentID=axi_uartlite_0_STAT_REG, Description=Indicates that a overrun error has occurred after the last time the status register was read. Overrun is when a new character has been received but the receive FIFO is full. The received character is ignored and not written into the receive FIFO. This bit is cleared when the status register is read.      0 - No overrun error has occurred      1 - Overrun error has occurred
+, Bits=[Ljava.lang.Integer;@43452009, Readable=true, ID=Overrun_Error, Writeable=false, Name=Overrun_Error}, {ParentID=axi_uartlite_0_STAT_REG, Description=Indicates that a frame error has occurred after the last time the status register was read. Frame error is defined as detection of a stop bit with the value 0. The receive character is ignored and not written to the receive FIFO. This bit is cleared when the status register is read.      0 - No frame error has occurred   1 - Frame error has occurred
+, Bits=[Ljava.lang.Integer;@43ba8a58, Readable=true, ID=Frame_Error, Writeable=false, Name=Frame_Error}, {ParentID=axi_uartlite_0_STAT_REG, Description=Indicates that a parity error has occurred after the last time the status register was read. If the UART is configured without any parity handling, this bit is always 0. The received character is written into the receive FIFO. This bit is cleared when the status register is read.      0 - No parity error has occurred      1 - Parity error has occurred
+, Bits=[Ljava.lang.Integer;@6bf85374, Readable=true, ID=Parity_Error, Writeable=false, Name=Parity_Error}]
+14:53:02 INFO  : Memory regions updated for context MicroBlaze #0
+14:53:02 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:53:02 DEBUG : XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0], Thread: Worker-27
+14:53:02 DEBUG : XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0], Result: [null, ]. Thread: Worker-27
+14:53:02 INFO  : Context for processor 'microblaze_0' is selected.
+14:53:02 DEBUG : XSCT Command: [con], Thread: Worker-27
+14:53:02 DEBUG : (XSDB Server)Info: MicroBlaze #0 (target 3) Running
+
+14:53:02 DEBUG : XSCT command with result: [con], Result: [null, ]. Thread: Worker-27
+14:53:02 INFO  : 'con' command is executed.
+14:53:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+14:53:02 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+14:55:22 INFO  : Disconnected from the channel tcfchan#11.
+14:55:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:55:23 INFO  : 'fpga -state' command is executed.
+14:55:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:55:23 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:55:23 INFO  : 'jtag frequency' command is executed.
+14:55:23 INFO  : Context for processor 'microblaze_0' is selected.
+14:55:23 INFO  : Processor reset is completed for 'microblaze_0'.
+14:55:23 INFO  : Context for processor 'microblaze_0' is selected.
+14:55:23 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+14:55:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+14:55:23 INFO  : Memory regions updated for context MicroBlaze #0
+14:55:23 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:55:23 INFO  : Context for processor 'microblaze_0' is selected.
+14:55:23 INFO  : 'con' command is executed.
+14:55:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+14:55:23 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+14:56:32 INFO  : Disconnected from the channel tcfchan#12.
+14:56:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:56:33 INFO  : 'fpga -state' command is executed.
+14:56:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:56:33 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:56:33 INFO  : 'jtag frequency' command is executed.
+14:56:34 INFO  : Context for processor 'microblaze_0' is selected.
+14:56:34 INFO  : Processor reset is completed for 'microblaze_0'.
+14:56:34 INFO  : Context for processor 'microblaze_0' is selected.
+14:56:34 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+14:56:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+14:56:34 INFO  : Memory regions updated for context MicroBlaze #0
+14:56:34 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:56:34 INFO  : Context for processor 'microblaze_0' is selected.
+14:56:34 INFO  : 'con' command is executed.
+14:56:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+14:56:34 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+14:57:49 INFO  : Disconnected from the channel tcfchan#13.
+14:57:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:57:50 INFO  : 'fpga -state' command is executed.
+14:57:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:57:50 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:57:50 INFO  : 'jtag frequency' command is executed.
+14:57:50 INFO  : Context for processor 'microblaze_0' is selected.
+14:57:50 INFO  : Processor reset is completed for 'microblaze_0'.
+14:57:50 INFO  : Context for processor 'microblaze_0' is selected.
+14:57:50 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+14:57:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+14:57:50 INFO  : Memory regions updated for context MicroBlaze #0
+14:57:50 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:57:50 INFO  : Context for processor 'microblaze_0' is selected.
+14:57:50 INFO  : 'con' command is executed.
+14:57:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+14:57:50 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+15:48:56 INFO  : Disconnected from the channel tcfchan#14.
+15:48:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+15:48:57 INFO  : 'fpga -state' command is executed.
+15:48:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:48:57 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+15:48:57 INFO  : 'jtag frequency' command is executed.
+15:48:57 INFO  : Context for processor 'microblaze_0' is selected.
+15:48:57 INFO  : Processor reset is completed for 'microblaze_0'.
+15:48:57 INFO  : Context for processor 'microblaze_0' is selected.
+15:48:57 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+15:48:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+15:48:57 INFO  : Memory regions updated for context MicroBlaze #0
+15:48:57 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+15:48:57 INFO  : Context for processor 'microblaze_0' is selected.
+15:48:57 INFO  : 'con' command is executed.
+15:48:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+15:48:57 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+15:49:34 INFO  : Disconnected from the channel tcfchan#15.
+15:49:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+15:49:35 INFO  : 'fpga -state' command is executed.
+15:49:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:49:35 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+15:49:35 INFO  : 'jtag frequency' command is executed.
+15:49:35 INFO  : Context for processor 'microblaze_0' is selected.
+15:49:35 INFO  : Processor reset is completed for 'microblaze_0'.
+15:49:35 INFO  : Context for processor 'microblaze_0' is selected.
+15:49:35 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+15:49:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+15:49:35 INFO  : Memory regions updated for context MicroBlaze #0
+15:49:35 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+15:49:35 INFO  : Context for processor 'microblaze_0' is selected.
+15:49:35 INFO  : 'con' command is executed.
+15:49:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+15:49:35 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+15:57:43 INFO  : Disconnected from the channel tcfchan#16.
+15:57:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+15:57:45 INFO  : 'fpga -state' command is executed.
+15:57:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:57:45 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+15:57:45 INFO  : 'jtag frequency' command is executed.
+15:57:45 INFO  : Context for processor 'microblaze_0' is selected.
+15:57:45 INFO  : Processor reset is completed for 'microblaze_0'.
+15:57:45 INFO  : Context for processor 'microblaze_0' is selected.
+15:57:45 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+15:57:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+15:57:45 INFO  : Memory regions updated for context MicroBlaze #0
+15:57:45 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+15:57:45 INFO  : Context for processor 'microblaze_0' is selected.
+15:57:45 INFO  : 'con' command is executed.
+15:57:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+15:57:45 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+16:01:10 INFO  : Disconnected from the channel tcfchan#17.
+16:01:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+16:01:11 INFO  : 'fpga -state' command is executed.
+16:01:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:01:11 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+16:01:11 INFO  : 'jtag frequency' command is executed.
+16:01:11 INFO  : Context for processor 'microblaze_0' is selected.
+16:01:11 INFO  : Processor reset is completed for 'microblaze_0'.
+16:01:11 INFO  : Context for processor 'microblaze_0' is selected.
+16:01:11 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+16:01:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+16:01:11 INFO  : Memory regions updated for context MicroBlaze #0
+16:01:11 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+16:01:11 INFO  : Context for processor 'microblaze_0' is selected.
+16:01:11 INFO  : 'con' command is executed.
+16:01:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+16:01:11 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+16:02:58 INFO  : Disconnected from the channel tcfchan#18.
+16:02:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+16:02:59 INFO  : 'fpga -state' command is executed.
+16:02:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:02:59 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+16:02:59 INFO  : 'jtag frequency' command is executed.
+16:02:59 INFO  : Context for processor 'microblaze_0' is selected.
+16:02:59 INFO  : Processor reset is completed for 'microblaze_0'.
+16:02:59 INFO  : Context for processor 'microblaze_0' is selected.
+16:02:59 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+16:02:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+16:02:59 INFO  : Memory regions updated for context MicroBlaze #0
+16:02:59 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+16:02:59 INFO  : Context for processor 'microblaze_0' is selected.
+16:02:59 INFO  : 'con' command is executed.
+16:02:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+16:02:59 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+16:54:49 INFO  : Disconnected from the channel tcfchan#19.
+16:54:51 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:15:20 INFO  : Registering command handlers for SDK TCF services
+11:15:21 INFO  : Launching XSCT server: xsct.bat -interactive C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\temp_xsdb_launch_script.tcl
+11:15:35 INFO  : XSCT server has started successfully.
+11:16:34 INFO  : Successfully done setting XSCT server connection channel  
+11:16:34 INFO  : Successfully done setting SDK workspace  
+11:16:34 INFO  : Processing command line option -hwspec C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper.hdf.
+11:16:34 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+11:19:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:21:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:21:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+11:21:44 INFO  : FPGA configured successfully with bitstream "C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper_hw_platform_0/download.bit"
+11:22:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+11:22:18 INFO  : 'fpga -state' command is executed.
+11:22:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:22:19 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+11:22:19 INFO  : 'jtag frequency' command is executed.
+11:22:19 INFO  : Context for processor 'microblaze_0' is selected.
+11:22:19 INFO  : Processor reset is completed for 'microblaze_0'.
+11:22:19 INFO  : Context for processor 'microblaze_0' is selected.
+11:22:19 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+11:22:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+11:22:19 INFO  : Memory regions updated for context MicroBlaze #0
+11:22:19 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+11:22:19 INFO  : Context for processor 'microblaze_0' is selected.
+11:22:19 INFO  : 'con' command is executed.
+11:22:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+11:22:19 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+11:22:52 INFO  : Disconnected from the channel tcfchan#1.
+11:22:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+11:22:53 INFO  : 'fpga -state' command is executed.
+11:22:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:22:54 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+11:22:54 INFO  : 'jtag frequency' command is executed.
+11:22:54 INFO  : Context for processor 'microblaze_0' is selected.
+11:22:54 INFO  : Processor reset is completed for 'microblaze_0'.
+11:22:54 INFO  : Context for processor 'microblaze_0' is selected.
+11:22:54 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+11:22:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+11:22:54 INFO  : Memory regions updated for context MicroBlaze #0
+11:22:54 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+11:22:54 INFO  : Context for processor 'microblaze_0' is selected.
+11:22:54 INFO  : 'con' command is executed.
+11:22:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+11:22:54 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+11:23:52 INFO  : Disconnected from the channel tcfchan#2.
+11:23:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+11:23:53 INFO  : 'fpga -state' command is executed.
+11:23:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:23:54 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+11:23:54 INFO  : 'jtag frequency' command is executed.
+11:23:54 INFO  : Context for processor 'microblaze_0' is selected.
+11:23:54 INFO  : Processor reset is completed for 'microblaze_0'.
+11:23:54 INFO  : Context for processor 'microblaze_0' is selected.
+11:23:54 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+11:23:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+11:23:54 INFO  : Memory regions updated for context MicroBlaze #0
+11:23:54 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+11:23:54 INFO  : Context for processor 'microblaze_0' is selected.
+11:23:54 INFO  : 'con' command is executed.
+11:23:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+11:23:54 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+11:26:50 INFO  : Disconnected from the channel tcfchan#3.
+11:26:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+11:26:51 INFO  : 'fpga -state' command is executed.
+11:26:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:26:51 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+11:26:51 INFO  : 'jtag frequency' command is executed.
+11:26:51 INFO  : Context for processor 'microblaze_0' is selected.
+11:26:52 INFO  : Processor reset is completed for 'microblaze_0'.
+11:26:52 INFO  : Context for processor 'microblaze_0' is selected.
+11:26:52 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+11:26:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+11:26:52 INFO  : Memory regions updated for context MicroBlaze #0
+11:26:52 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+11:26:52 INFO  : Context for processor 'microblaze_0' is selected.
+11:26:52 INFO  : 'con' command is executed.
+11:26:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+11:26:52 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+11:31:06 INFO  : Disconnected from the channel tcfchan#4.
+16:52:38 INFO  : Registering command handlers for SDK TCF services
+16:52:39 INFO  : Launching XSCT server: xsct.bat -interactive C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\temp_xsdb_launch_script.tcl
+16:52:43 INFO  : XSCT server has started successfully.
+16:52:52 INFO  : Successfully done setting XSCT server connection channel  
+16:52:52 INFO  : Successfully done setting SDK workspace  
+16:52:52 INFO  : Processing command line option -hwspec C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper.hdf.
+16:52:52 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+14:02:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:02:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:02:51 INFO  : FPGA configured successfully with bitstream "C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper_hw_platform_0/download.bit"
+14:03:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA" && level==0} -index 0' command is executed.
+14:03:58 INFO  : 'fpga -state' command is executed.
+14:03:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:03:58 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A25A2AA' is selected.
+14:03:58 INFO  : 'jtag frequency' command is executed.
+14:03:58 INFO  : Context for processor 'microblaze_0' is selected.
+14:03:58 INFO  : Processor reset is completed for 'microblaze_0'.
+14:03:58 INFO  : Context for processor 'microblaze_0' is selected.
+14:03:59 INFO  : The application 'C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf' is downloaded to processor 'microblaze_0'.
+14:03:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+dow C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/hello_world_project/Debug/hello_world_project.elf
+----------------End of Script----------------
+
+14:03:59 INFO  : Memory regions updated for context MicroBlaze #0
+14:03:59 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+14:03:59 INFO  : Context for processor 'microblaze_0' is selected.
+14:03:59 INFO  : 'con' command is executed.
+14:03:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A25A2AA"} -index 0
+con
+----------------End of Script----------------
+
+14:03:59 INFO  : Launch script is exported to file 'C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hello_world_project.elf_on_local.tcl'
+14:07:42 INFO  : Disconnected from the channel tcfchan#1.

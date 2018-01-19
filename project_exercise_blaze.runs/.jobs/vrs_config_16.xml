@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_ilmb_v10_1_synth_1" LaunchDir="C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.runs/design_1_ilmb_v10_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

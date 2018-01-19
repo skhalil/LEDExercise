@@ -1,0 +1,458 @@
+/*
+
+Vivado v2017.2 (64-bit)
+SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+
+Process ID: 7900
+License: Customer
+
+Current time: 	1/12/18 10:19:20 AM CST
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 7
+OS Version: 6.1
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 98 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/java.exe
+Java library paths: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o;C:/WINDOWS/Sun/Java/bin;C:/WINDOWS/system32;C:/WINDOWS;C:/Xilinx/Vivado/2017.2/bin;C:/Xilinx/Vivado/2017.2/lib/win64.o;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/server;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin;C:/Xilinx/SDK/2017.2/bin;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado_HLS/2017.2/bin;C:/Program Files (x86)/Intel/iCLS Client/;C:/Program Files/Intel/iCLS Client/;C:/ProgramData/Oracle/Java/javapath;C:/WINDOWS/system32;C:/WINDOWS;C:/WINDOWS/System32/Wbem;C:/WINDOWS/System32/WindowsPowerShell/v1.0/;C:/Cadence/SPB_16.6/OpenAccess/bin/win32/opt;C:/Cadence/SPB_16.6/tools/Capture;C:/Cadence/SPB_16.6/tools/PSpice/Library;C:/Cadence/SPB_16.6/tools/PSpice;C:/Cadence/SPB_16.6/tools/specctra/bin;C:/Cadence/SPB_16.6/tools/fet/bin;C:/Cadence/SPB_16.6/tools/libutil/bin;C:/Cadence/SPB_16.6/tools/bin;C:/Cadence/SPB_16.6/tools/pcb/bin;C:/Program Files/PuTTY/;C:/Program Files/IVI Foundation/VISA/Win64/Bin/;C:/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/;C:/Program Files (x86)/Intel/UCRT/;C:/Program Files/Intel/UCRT/;C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL;C:/Program Files/Intel/Intel(R) Management Engine Components/DAL;C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT;C:/Program Files/Intel/Intel(R) Management Engine Components/IPT;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/libexec/gcc/x86_64-w64-mingw32/6.2.0;.
+
+User name: 	s740k397
+User home directory: C:/Users/s740k397
+User working directory: C:/SharedProjects/Sadias_Directory/project_exercise_blaze
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.2
+RDI_DATADIR: C:/Xilinx/Vivado/2017.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.2/bin
+
+User preferences location: C:/Users/s740k397/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/s740k397/AppData/Roaming/Xilinx/Vivado/2017.2/vivado.xml
+Vivado layouts directory: C:/Users/s740k397/AppData/Roaming/Xilinx/Vivado/2017.2/layouts
+PlanAhead jar location: 	C:/Xilinx/Vivado/2017.2/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	C:/SharedProjects/Sadias_Directory/project_exercise_blaze/.Xil/Vivado-7900-PHSX-79FJZ32
+
+GUI allocated memory:	157 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 494 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\SharedProjects\Sadias_Directory\project_exercise_blaze\project_exercise_blaze.xpr. Version: Vivado v2017.2 
+// bs:g (cg:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// [GUI Memory]: 41 MB (+40169kb) [00:00:08]
+// [Engine Memory]: 483 MB (+355129kb) [00:00:08]
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 527 MB. GUI used memory: 31 MB. Current time: 1/12/18 10:19:22 AM CST
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 533 MB (+26871kb) [00:00:13]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 53 MB (+10579kb) [00:00:16]
+// [Engine Memory]: 600 MB (+42282kb) [00:00:16]
+// [GUI Memory]: 65 MB (+9639kb) [00:00:18]
+// Tcl Message: open_project C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:14 . Memory (MB): peak = 831.035 ; gain = 137.465 
+// Project name: project_exercise_blaze; location: C:/SharedProjects/Sadias_Directory/project_exercise_blaze; part: xc7vx485tffg1761-2
+dismissDialog("Open Project"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 70 MB (+2469kb) [00:05:59]
+// [GUI Memory]: 74 MB (+189kb) [00:08:09]
+// [GUI Memory]: 78 MB (+700kb) [00:10:49]
+// [GUI Memory]: 84 MB (+1420kb) [00:13:54]
+// [Engine Memory]: 638 MB (+7919kb) [00:14:49]
+// HMemoryUtils.trashcanNow. Engine heap size: 638 MB. GUI used memory: 45 MB. Current time: 1/12/18 10:34:02 AM CST
+// [GUI Memory]: 91 MB (+2862kb) [00:22:05]
+// [GUI Memory]: 95 MB (+246kb) [00:30:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 642 MB. GUI used memory: 45 MB. Current time: 1/12/18 11:04:02 AM CST
+// [GUI Memory]: 100 MB (+146kb) [00:47:56]
+// HMemoryUtils.trashcanNow. Engine heap size: 642 MB. GUI used memory: 41 MB. Current time: 1/12/18 11:34:03 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 642 MB. GUI used memory: 41 MB. Current time: 1/12/18 12:04:03 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 642 MB. GUI used memory: 41 MB. Current time: 1/12/18 12:34:03 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 642 MB. GUI used memory: 41 MB. Current time: 1/12/18 1:04:03 PM CST
+// Elapsed time: 10846 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+// [Engine Memory]: 684 MB (+15791kb) [03:01:09]
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa:p (cg:JFrame): Launch SDK: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 684 MB. GUI used memory: 40 MB. Current time: 1/12/18 1:20:23 PM CST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aa:p)
+dismissDialog("Launch SDK"); // aa:p (cg:JFrame)
+// Tcl Message: launch_sdk -workspace C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk -hwspec C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk -hwspec C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// Elapsed time: 794 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bs:g (cg:JFrame):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.srcs/sources_1/bd/design_1/design_1.bd} 
+// Tcl Message: Adding cell -- xilinx.com:ip:microblaze:10.0 - microblaze_0 Adding cell -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc Adding cell -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1 Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_sys_diff_clock_clk_n_100M Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0 Adding cell -- ku.edu:module_ref:led_ctl:1.0 - led_ctl_0 Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0 Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0 Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0 
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10 Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10 Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - lmb_bram Successfully read diagram <design_1> from BD file <C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.srcs/sources_1/bd/design_1/design_1.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 724 MB (+5608kb) [03:14:34]
+// TclEventType: RSB_CONNECTION_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 729 MB. GUI used memory: 48 MB. Current time: 1/12/18 1:33:46 PM CST
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 900.023 ; gain = 3.434 
+// 'bv' command handler elapsed time: 7 seconds
+dismissDialog("Open Block Design"); // bs:g (cg:JFrame)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:M (Workspace:JPanel, cg:JFrame)
+// PAPropertyPanels.initPanels (axi_uartlite_0) elapsed time: 0.2s
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// p:g (cg:JFrame): Re-customize IP: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 754 MB. GUI used memory: 51 MB. Current time: 1/12/18 1:34:03 PM CST
+// Elapsed time: 67 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "IP Configuration", 1); // aU:i (C:JPanel, p:g)
+// Elapsed time: 313 seconds
+selectButton(PAResourceAtoD.CustomizeCoreDialog_IP_LOCATION, "IP Location"); // B:JideButton (f:CommandBar, p:g)
+// IP Location: show
+selectButton(PAResourceAtoD.CustomizeCoreDialog_DOCUMENTATION, "Documentation"); // B:JideButton (f:CommandBar, p:g)
+selectButton(PAResourceAtoD.CustomizeCoreDialog_DOCUMENTATION, "Documentation"); // B:JideButton (f:CommandBar, p:g)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Board", 0); // aU:i (C:JPanel, p:g)
+// Elapsed time: 14 seconds
+dismissDialog("Re-customize IP"); // p:g (cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// p:g (cg:JFrame): Re-customize IP: addNotify
+// Elapsed time: 77 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "IP Configuration", 1); // aU:i (C:JPanel, p:g)
+// Elapsed time: 17 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Board", 0); // aU:i (C:JPanel, p:g)
+// [Engine Memory]: 762 MB (+1500kb) [03:23:12]
+// Elapsed time: 55 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "IP Configuration", 1); // aU:i (C:JPanel, p:g)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Board", 0); // aU:i (C:JPanel, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cg:JFrame)
+// Tcl Command: 'set_property -dict [list CONFIG.GPIO_BOARD_INTERFACE {Custom}] [get_bd_cells axi_gpio_0]'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.GPIO_BOARD_INTERFACE {Custom}] [get_bd_cells axi_gpio_0] 
+// Tcl Message: endgroup 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// p:g (cg:JFrame): Re-customize IP: addNotify
+// Elapsed time: 36 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "IP Configuration", 1); // aU:i (C:JPanel, p:g)
+// Elapsed time: 17 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cg:JFrame)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ak:q (cg:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, ak:q)
+// bs:g (cg:JFrame):  Save Constraints : addNotify
+// TclEventType: RSB_SAVE_DIAGRAM
+dismissDialog("Save Project"); // ak:q (cg:JFrame)
+// Tcl Message: save_bd_design 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.srcs/sources_1/bd/design_1/design_1.bd>  Wrote  : <C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// x:aN (cg:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Save Constraints"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x:aN (cg:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_axi_gpio_0_0_synth_1 
+// f:p (cg:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+// 'cp' command handler elapsed time: 20 seconds
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// bs:g (cg:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 795 MB. GUI used memory: 51 MB. Current time: 1/12/18 1:44:53 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks. 
+// Tcl Message: Wrote  : <C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.srcs/sources_1/bd/design_1/design_1.bd>  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// [Engine Memory]: 836 MB (+37516kb) [03:25:43]
+// Tcl Message: Verilog Output written to : C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.srcs/sources_1/bd/design_1/hdl/design_1.v Verilog Output written to : C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: Exporting to file C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.srcs/sources_1/bd/design_1/hdl/design_1.hwdef 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Jan 12 13:45:03 2018] Launched design_1_axi_gpio_0_0_synth_1, synth_1... Run output will be captured here: design_1_axi_gpio_0_0_synth_1: C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.runs/design_1_axi_gpio_0_0_synth_1/runme.log synth_1: C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.runs/synth_1/runme.log [Fri Jan 12 13:45:03 2018] Launched impl_1... Run output will be captured here: C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1008.180 ; gain = 73.586 
+// Elapsed time: 17 seconds
+dismissDialog("Generate Bitstream"); // bs:g (cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// [Engine Memory]: 915 MB (+38967kb) [03:26:50]
+// HMemoryUtils.trashcanNow. Engine heap size: 915 MB. GUI used memory: 55 MB. Current time: 1/12/18 1:46:03 PM CST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 445 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:x)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bs:g (cg:JFrame):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// [Engine Memory]: 1,070 MB (+115293kb) [03:33:27]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,070 MB. GUI used memory: 57 MB. Current time: 1/12/18 1:52:38 PM CST
+// [Engine Memory]: 1,144 MB (+21330kb) [03:33:32]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// HMemoryUtils.trashcanNow. Engine heap size: 1,278 MB. GUI used memory: 56 MB. Current time: 1/12/18 1:52:53 PM CST
+// [Engine Memory]: 1,279 MB (+80937kb) [03:33:42]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,704 MB. GUI used memory: 56 MB. Current time: 1/12/18 1:53:08 PM CST
+// [Engine Memory]: 1,704 MB (+378513kb) [03:33:57]
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,801 MB. GUI used memory: 57 MB. Current time: 1/12/18 1:53:12 PM CST
+// [Engine Memory]: 1,801 MB (+12412kb) [03:34:01]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: C:/Xilinx/Vivado/2017.2/data/parts/xilinx/virtex7/devint/virtex7/xc7vx485t/xc7vx485t.xgd; ZipEntry: xc7vx485t_detail.xgd elapsed time: 1s
+// [Engine Memory]: 1,938 MB (+49910kb) [03:34:02]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 2.8s
+// Device: addNotify
+// DeviceView Instantiated
+// [GUI Memory]: 106 MB (+476kb) [03:34:05]
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 525 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2017.2 INFO: [Device 21-403] Loading part xc7vx485tffg1761-2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [C:/SharedProjects/Sadias_Directory/project_exercise_blaze/.Xil/Vivado-7900-PHSX-79FJZ32/dcp31/design_1_wrapper_board.xdc] Finished Parsing XDC File [C:/SharedProjects/Sadias_Directory/project_exercise_blaze/.Xil/Vivado-7900-PHSX-79FJZ32/dcp31/design_1_wrapper_board.xdc] Parsing XDC File [C:/SharedProjects/Sadias_Directory/project_exercise_blaze/.Xil/Vivado-7900-PHSX-79FJZ32/dcp31/design_1_wrapper_early.xdc] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57] INFO: [Timing 38-2] Deriving generated clocks [C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57] 
+// Tcl Message: get_clocks: Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 2024.996 ; gain = 623.523 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2034.758 ; gain = 6.758 
+// Tcl Message: Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2034.758 ; gain = 6.758 
+// Tcl Message: Generating merged BMM file for the design top 'design_1_wrapper'... 
+// Tcl Message: INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_1/data/mb_bootloop_le.elf  INFO: [Project 1-111] Unisim Transformation Summary:   A total of 128 instances were transformed.   LUT6_2 => LUT6_2 (LUT6, LUT5): 79 instances   RAM16X1D => RAM32X1D (RAMD32, RAMD32): 32 instances   RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 16 instances   SRLC16E => SRL16E: 1 instances  
+// Device view-level: 0.0
+// [GUI Memory]: 111 MB (+228kb) [03:34:06]
+// ExpRunCommands.openImplResults elapsed time: 48.4s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:55 ; elapsed = 00:00:47 . Memory (MB): peak = 2161.160 ; gain = 1071.430 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 119 MB (+2564kb) [03:34:09]
+// [GUI Memory]: 126 MB (+502kb) [03:34:09]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dH' command handler elapsed time: 55 seconds
+// [GUI Memory]: 134 MB (+2063kb) [03:34:13]
+// M:a (cg:JFrame): Critical Messages: addNotify
+// Elapsed time: 55 seconds
+dismissDialog("Open Implemented Design"); // bs:g (cg:JFrame)
+// [GUI Memory]: 145 MB (+4668kb) [03:34:15]
+// Elapsed time: 209 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, M:a)
+dismissDialog("Critical Messages"); // M:a (cg:JFrame)
+// Elapsed time: 78 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ac:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X:p (cg:JFrame): Export Hardware: addNotify
+selectCheckBox(PAResourceItoN.NewExportHardwareDialog_INCLUDE_BITSTREAM, "Include bitstream", true); // g:JCheckBox (JPanel:JComponent, X:p): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:p)
+// 'm' command handler elapsed time: 10 seconds
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, H:JDialog)
+dismissDialog("Export Hardware"); // X:p (cg:JFrame)
+// Tcl Message: file copy -force C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.runs/impl_1/design_1_wrapper.sysdef C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/design_1_wrapper.hdf  
+// [GUI Memory]: 154 MB (+1336kb) [03:40:33]
+// Elapsed time: 838 seconds
+selectTab("PAResourceOtoP.PAViews_TIMING", (HResource) null, "Timing Summary - impl_1 (saved)", 0); // d:TdiGroup (g:a, cg:JFrame)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aF:FrameContainer (ContainerContainer:JideSplitPane, cg:JFrame)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aF:FrameContainer (ContainerContainer:JideSplitPane, cg:JFrame)
+// Elapsed time: 10 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aF:FrameContainer (ContainerContainer:JideSplitPane, cg:JFrame)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aF:FrameContainer (ContainerContainer:JideSplitPane, cg:JFrame)
+// [GUI Memory]: 162 MB (+100kb) [03:54:33]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,015 MB. GUI used memory: 112 MB. Current time: 1/12/18 2:14:09 PM CST
+// Elapsed time: 410 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bs:g (cg:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.srcs/sources_1/bd/design_1/design_1.bd} 
+dismissDialog("Open Block Design"); // bs:g (cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// M:bs (cg:JFrame):  Re-customize IP : addNotify
+// p:g (cg:JFrame): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // M:bs (cg:JFrame)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cg:JFrame)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "System_zoom_in"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "System_zoom_in"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Elapsed time: 201 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "axi_uartlite_0 ; S_AXI ; Reg ; 0x4060_0000 ; 64K ; 0x4060_FFFF", 3, "axi_uartlite_0", 0, false); // g:af (JViewport:JComponent, cg:JFrame)
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "axi_uartlite_0 ; S_AXI ; Reg ; 0x4060_0000 ; 64K ; 0x4060_FFFF", 3, "axi_uartlite_0", 0, false); // g:af (JViewport:JComponent, cg:JFrame)
+expandTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "axi_uartlite_0 ; S_AXI ; Reg ; 0x4060_0000 ; 64K ; 0x4060_FFFF", 3); // g:af (JViewport:JComponent, cg:JFrame)
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "axi_uartlite_0 ; S_AXI ; Reg ; 0x4060_0000 ; 64K ; 0x4060_FFFF", 3, "axi_uartlite_0", 0, false, false, false, false, false, true); // g:af (JViewport:JComponent, cg:JFrame) - Double Click
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "Data (32 address bits : 4G) ;  ;  ;  ;  ; ", 1, "Data (32 address bits : 4G)", 0, true); // g:af (JViewport:JComponent, cg:JFrame) - Node
+collapseTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "Data (32 address bits : 4G) ;  ;  ;  ;  ; ", 1); // g:af (JViewport:JComponent, cg:JFrame)
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "Data (32 address bits : 4G) ;  ;  ;  ;  ; ", 1, "Data (32 address bits : 4G)", 0, true, false, false, false, false, true); // g:af (JViewport:JComponent, cg:JFrame) - Double Click - Node
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "Data (32 address bits : 4G) ;  ;  ;  ;  ; ", 1, "Data (32 address bits : 4G)", 0, true); // g:af (JViewport:JComponent, cg:JFrame) - Node
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "Instruction (32 address bits : 4G) ;  ;  ;  ;  ; ", 2, "Instruction (32 address bits : 4G)", 0, true); // g:af (JViewport:JComponent, cg:JFrame) - Node
+collapseTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "Instruction (32 address bits : 4G) ;  ;  ;  ;  ; ", 2); // g:af (JViewport:JComponent, cg:JFrame)
+expandTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "Instruction (32 address bits : 4G) ;  ;  ;  ;  ; ", 2); // g:af (JViewport:JComponent, cg:JFrame)
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "Instruction (32 address bits : 4G) ;  ;  ;  ;  ; ", 2, "Instruction (32 address bits : 4G)", 0, true, false, false, false, false, true); // g:af (JViewport:JComponent, cg:JFrame) - Double Click - Node
+expandTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "Data (32 address bits : 4G) ;  ;  ;  ;  ; ", 1); // g:af (JViewport:JComponent, cg:JFrame)
+// Elapsed time: 143 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,028 MB. GUI used memory: 117 MB. Current time: 1/12/18 2:44:09 PM CST
+// [GUI Memory]: 170 MB (+420kb) [04:37:11]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,028 MB. GUI used memory: 116 MB. Current time: 1/12/18 3:14:09 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,028 MB. GUI used memory: 114 MB. Current time: 1/12/18 3:44:09 PM CST
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// p:g (cg:JFrame): Re-customize IP: addNotify
+// Elapsed time: 4813 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "IP Configuration", 1); // aU:i (C:JPanel, p:g)
+// Elapsed time: 53 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,028 MB. GUI used memory: 117 MB. Current time: 1/12/18 4:14:09 PM CST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,028 MB. GUI used memory: 116 MB. Current time: 1/12/18 4:44:09 PM CST

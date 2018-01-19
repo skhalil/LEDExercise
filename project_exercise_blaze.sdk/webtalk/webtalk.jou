@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# 
+# Start of session at: Fri Jan 12 16:54:51 2018
+# Process ID: 4288
+# Current directory: C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/webtalk/webtalk.log
+# Journal file: C:/SharedProjects/Sadias_Directory/project_exercise_blaze/project_exercise_blaze.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
